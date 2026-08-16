@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Cuenta</title>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sou.css') }}">
+
+</head>
+<body>
+
+  <div class="auth-container">
+    <div class="auth-header">
+      <h1>Crea tu cuenta</h1>
+      <p>Completa tus datos para empezar</p>
+    </div>
+
+    <form action="/recibir_datos" method="POST">
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required>
+      </div>
+
+      <div class="form-group">
+        <label for="birthdate">Fecha de nacimiento</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="country">País</label>
+        <select id="country" name="country" required>
+          <option value="" disabled selected>Selecciona tu país</option>
+          <option value="AR">Argentina</option>
+          <option value="CL">Chile</option>
+          <option value="CO">Colombia</option>
+          <option value="ES">España</option>
+          <option value="MX">México</option>
+          <option value="PE">Perú</option>
+          <!-- Puedes añadir más opciones según lo necesites -->
+        </select>
+      </div>
+
+      <button type="submit" class="btn-submit">Registrarse</button>
+    </form>
+
+    <div class="auth-footer">
+      ¿Ya tienes cuenta? <a href="/">Inicia sesión</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medio Ambiente</title>
+    <link rel="stylesheet" href="skebo.css">
+</head>
+
+<footer>
+    <p>© 2026 - Proyecto del Medio Ambiente</p>
+</footer>
+
+<script>
+let arboles = 0;
+
+function plantarArbol() {
+    arboles++;
+    document.getElementById("contador").textContent = arboles;
+
+    let porcentaje = arboles * 10;
+    if (porcentaje > 100) porcentaje = 100;
+
+    document.getElementById("barra").style.width = porcentaje + "%";
+
+    if (arboles == 10) {
+        alert("¡Has plantado 10 árboles virtuales!");
+    }
+}
+
+function cambiarTema() {
+    document.body.classList.toggle("oscuro");
+}
+</script>
+
+</body>
+</html>
+
+<body>
+
+<header>
+    <h1>Cuidemos el Medio Ambiente</h1>
+    <p>Pequeñas acciones crean un gran cambio.</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#importancia">Importancia</a>
+    <a href="#acciones">Acciones</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="banner">
+    <h2>Salva el Planeta</h2>
+    <p>Cada acción cuenta para proteger nuestro hogar.</p>
+
+    <button onclick="plantarArbol()">Plantar un árbol</button>
+    <button onclick="cambiarTema()">Cambiar tema</button>
+
+    <h3>Árboles plantados: <span id="contador">0</span></h3>
+</section>
+
+<div class="progreso">
+    <div class="barra" id="barra"></div>
+</div>
+
+<section id="inicio" class="hero">
+    <h2>Protejamos Nuestro Planeta</h2>
+    <p>La naturaleza nos brinda todo lo necesario para vivir. Es nuestra responsabilidad cuidarla.</p>
+    <button onclick="alert('¡Gracias por cuidar el planeta! ')">Únete</button>
+</section>
+
+<section id="importancia">
+    <h2>¿Por qué es importante?</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Bosques</h3>
+            <p>Producen oxígeno y son el hogar de miles de especies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Agua</h3>
+            <p>Es un recurso esencial para todos los seres vivos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Animales</h3>
+            <p>La biodiversidad mantiene el equilibrio de la naturaleza.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Proyecto del Medio Ambiente</p>
+</footer>
+
+<section id="acciones">
+    <h2>¿Cómo ayudar?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Recicla</h3>
+            <p>Separa el plástico, papel, vidrio y metal para reducir la contaminación.</p>
+        </div>
+
+        <div class="card">
+            <h3>Ahorra agua</h3>
+            <p>Cierra la llave cuando no la uses y evita desperdiciar este recurso.</p>
+        </div>
+
+        <div class="card">
+            <h3>Planta árboles</h3>
+            <p>Los árboles producen oxígeno y ayudan a combatir el cambio climático.</p>
+        </div>
+
+        <div class="card">
+            <h3>Usa bicicleta</h3>
+            <p>Reduce la contaminación utilizando bicicleta o caminando.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
+
+    <ul>
+        <li>Reciclar.</li>
+        <li>Usar bicicleta o caminar.</li>
+        <li>Plantar árboles.</li>
+        <li>Ahorrar energía.</li>
+        <li>Ahorrar agua.</li>
+    </ul>
+</section>
+
+<footer id="allanjesedepaz@gmail.com">
+    <p>© 2026 - Proyecto del Medio Ambiente</p>
+</footer>
+
+</body>
+</html>
